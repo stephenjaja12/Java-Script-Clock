@@ -1,0 +1,117 @@
+.clock{
+    border: 4px solid white;
+    border-radius: 137px;
+    height: 147px;
+    width: 160px;
+    position: relative;
+    margin-left: 165px;
+}
+.clock-face{
+    border: 4px solid white;
+    border-radius: 159px;
+    height: 136px;
+    width: 146px;
+    margin-left: 2%;
+    margin-top: 1%;
+    position: relative;
+
+}
+.black-box{
+    margin-left: 20px;
+    width: 12%;
+    height: 45%;
+    position: absolute;
+    background-color: black;
+}
+
+.common-class {
+    position: absolute;
+    font-size: 21px;
+}
+.span1-class{
+    margin-top: 6px;
+    margin-left: 101px;
+}
+.span2-class{
+    margin-top: 31px;
+    margin-left: 119px;
+}
+.span3-class{
+    margin-top: 57px;
+    margin-left: 131px;
+
+}
+.span4-class{
+    margin-left: 121px;
+    margin-top: 83px;
+
+}
+.span5-class{
+    margin-left: 109px;
+    margin-top: 103px;
+
+}
+.span6-class{
+    margin-top: 112px;
+    margin-left: 69px;
+
+}
+.span7-class{
+    margin-top: 106px;
+    margin-left: 33px;
+
+}
+.span8-class{
+    margin-top: 86px;
+    margin-left: 11px;
+
+}
+.span9-class{
+    margin-top: 61px;
+    margin-left: 8px;
+
+}
+.span10-class{
+    margin-top: 34px;
+    margin-left: 9px;
+
+}
+.span11-class{
+    margin-top: 8px;
+    margin-left: 27px;
+}
+.span12-class{
+    margin-left: 59px;
+}
+.hand{
+    margin-top: 50px;
+    position: absolute;
+    margin-left: -5px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+}
+.clock-hour-hand{
+    height: 3px;
+    width: 49px;
+    background-color: black;
+
+}
+.clock-minute-hand{
+    height: 3px;
+    width: 31px;
+    background-color: black;
+    margin-left:13px; 
+    
+}
+.clock-second-hand{
+    height: 2px;
+    width: 39px;
+    background-color: red; 
+    margin-left:5px; 
+    
+}
+body{
+    background-image: url(nature.jpg);
+    align-items: center;
+}

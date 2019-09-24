@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="clock">
+    <div class="clock-face">
+      <span class="common-class span1-class">1</span>
+      <span class="common-class span2-class ">2</span>
+      <span class="common-class span3-class">3</span>
+      <span class="common-class span4-class">4</span>
+      <span class="common-class span5-class">5</span>
+      <span class="common-class span6-class">6</span>
+      <span class="common-class span7-class">7</span>
+      <span class="common-class span8-class">8</span>
+      <span class="common-class span9-class">9</span>
+      <span class="common-class span10-class">10</span>
+      <span class="common-class span11-class">11</span>
+      <span class="common-class span12-class">12</span>
+      <div class="hand clock-hour-hand"></div>
+      <div class="hand clock-minute-hand"></div>
+      <div class="hand clock-second-hand"></div>  
+    </div>
+</div>
+<div class="black-box"></div>
+<script>
+ 
+  // create constants to atore the values  of the reffered elements
+  
+  const  secondHand = document.querySelector('.clock-second-hand');
+  const  minuteHand = document.querySelector('.clock-minute-hand');
+  const  hourHand = document.querySelector('.clock-hour-hand');
+
+   //create a function
+  //iitialize a current date setup to update with the current time
+  //create a constant to store the currnet time
+  //create a constant to store the current second in degrees 
+  //initialize the secondHand to the scondhand degrees
+  function setDate(){
+     const now = new Date();
+     const currentSeconds =  now.getSeconds();
+     const secondInDegrees = ((currentSeconds / 60) * 360 )+90;
+     secondHand.style.transform = `rotate(${secondInDegrees}deg)`;
+
+   
+    const currentMins  = now.getMinutes();
+    const  minsInDegrees  =   (currentMins*0.033);
+    minuteHand.style.transform = `rotate(${minsInDegrees}deg)`;
+    
+    const currentHour = now.getHours();
+    const hourInDegrees = (currentHour*0.001089);
+    hourHand.style.transform = `rotate(${hourInDegrees}deg) `;
+
+   
+     
+  }
+ setInterval(setDate, 400);
+ 
+ function increaseObjectLeftMargin(){
+  
+   
+ }
+ /* setInterval(function increaseObjectLeftMargin(){
+    var targetObject = document.querySelector(".black-box");
+  // targetObject.style.left = "0px";
+   ;
+  for( i = 20; i < 200; ++i ){
+    let newLeft = i + 2;
+   targetObject.style.left = newLeft + "px" ;
+   console.log(targetObject.style.left);}
+  
+  }, 3000);*/
+  
+  function increaseObjectLeftMargin(){
+    var targetObject = document.querySelector(".black-box");
+  // targetObject.style.left = "0px";
+   
+   let newLeft = i + 2;
+  for( i = 0; ++i;){
+    let newLeft = i + 2;
+   targetObject.style.left = newLeft + "px" ;
+   console.log(targetObject.style.left);
+   }
+   
+  }
+  increaseObjectLeftMargin();
+  
+ 
+</script>
+</body>
+</html>
